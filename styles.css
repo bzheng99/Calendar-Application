@@ -1,0 +1,29 @@
+.container {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: 15fr 85fr;
+  grid-template-areas:
+    "logo days days days days days"
+    "classes calendar calendar calendar calendar calendar";
+}
+.logo {
+  grid-area: logo;
+  background-color: blue;
+}
+#dayNames {
+  grid-area: days;
+  background-color: orange;
+  display: flex;
+  justify-content: space-evenly;
+}
+#calendar {
+  grid-area: calendar;
+  background-color: blueviolet;
+}
+.classes {
+  grid-area: classes;
+  background-color: green;
+}
+.calendar {
+  background-color: yellow;
+}
